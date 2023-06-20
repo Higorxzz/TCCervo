@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>TCCervo</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+    <img src="../img/logo_tccervo.png" alt="TCCervo">
+      <h1>TCCervo</h1>
+    </div>
+    <div class="search-bar">
+      <div class="search-input">
+        <input type="text" placeholder="Procure por palavras-chave">
+        <button class="search-button"><img src="../img/Vector.png" alt="Buscar" width="20px"></button>
+      </div>
+      <div class="advanced-search">
+        <button>Busca avançada</button>
+      </div>
+    </div>
+    <div class="user-profile">
+      <button id="profile-button"><img src="../img/perfil.png" alt="Perfil" width="30px"> <span class="dropdown-arrow"></span></button>
+      <ul class="dropdown-menu" id="profile-dropdown">
+        <li><a href="#" class="text"><img src="../img/bi_people-circle.png" alt="Ícone 1" width="18px">Meu perfil</a></li>
+        <li class="divider"></li> <!-- Linha divisória -->
+        <li><a href="#" class="text"><img src="../img/fa-solid_power-off.png" alt="Ícone 1" width="18px">Sair</a></li>
+      </ul>
+    </div>
+  </header>
+      <div class="container-8">
+        <h2>Fale Conosco</h2>
+        <p class="paragrafo">Preencha o formulário a seguir para entrar em contato.</p>
+      </div>
+      <div class="container-2">
+        <div class="field-2">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" class="forms">
+        </div>
+        <div class="field-2">
+            <label for="curso">Curso</label>
+            <input type="text" id="curso" class="forms" placeholder="Selecione o curso">
+        </div>
+        
+        <div class="field-2">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" class="forms">
+        </div>
+        
+        <div class="field-3">
+            <label for="text">Assunto</label>
+            <input type="text" id="assunto" class="forms">
+        </div>
+        
+        
+        <div class="button-container-2">
+          <button class="create-account-button-2">ENVIAR MENSAGEM</button>
+        </div>
+    </div>
+      <script src="../js/function.js"></script>
+</body>
+</html>

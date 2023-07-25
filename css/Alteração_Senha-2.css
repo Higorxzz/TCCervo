@@ -1,0 +1,154 @@
+/*Referente a página de Alteração_Senha-2.html*/
+
+/*Importação de Fontes*/
+
+@font-face {
+    font-family: RobotoL;
+    src: url(../tipografia/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: RobotoB;
+  src: url(../tipografia/Roboto/Roboto-Bold.ttf);
+}
+
+/*Container em que ficará o título da página*/
+
+.container-1{
+    width: 450px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/*Estilização do h2 e do p*/
+
+h2 {
+    padding-left: none;
+    font-family: RobotoB;
+    margin: 0;
+}
+  
+p {
+    font-size: 13px;
+    font-family: RobotoL;
+    padding: none;
+    margin-top: 10px;
+}
+
+/*Container em que o conteúdo ficará localizado*/
+
+.container-2 {
+    border: 1px solid #4169E1;
+    padding: 40px;
+    width: 450px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/*Desing do Formulário*/
+
+.field {
+    margin-bottom: 10px;
+    
+}
+  
+.field label {
+    display: block;
+    font-family: RobotoB;
+    font-size: 10px;
+    padding-bottom: 3px;
+}
+  
+.field input[type="text"],
+.field input[type="email"],
+.field input[type="password"] {
+    width: 350px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid #4169E1;
+    border-radius: 4px;
+    font-size: 12px;
+}
+  
+.field a {
+    padding-top: 10px;
+    font-size: 12px;
+}
+  
+.field label {
+    display: block;
+    font-family: RobotoL;
+}
+
+/*Campos de Senhas*/
+
+.password-input {
+    position: relative;
+}
+  
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+  
+.password-toggle i {
+    color: #999;
+}
+  
+.password-toggle i:hover {
+    color: #333;
+}
+
+/*Linha que fica abaixo dos campos de senhas*/
+
+.linha {
+    border-bottom: 1px solid black;
+    margin: 0px 0;
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+/*Container do botão enviar*/
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+/*Personalização do botão de enviar*/
+
+.create-account-button {
+    padding: 10px 30px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #636363;
+    border: 1px solid #4169E1;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    transition: .2s;
+}
+
+.create-account-button:hover{
+    background-color: #4169E1;
+    color: #fff;
+    cursor: pointer;
+}
+
+/*Mensagem de entrar*/
+
+.entrar-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: RobotoL;
+    padding-top: 5px;
+}

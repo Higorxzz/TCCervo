@@ -1,0 +1,63 @@
+/*Referente a página de Alteração_S.html*/
+
+/*Importação de Fontes*/
+
+@font-face {
+    font-family: RobotoL;
+    src: url(../tipografia/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+  font-family: RobotoB;
+  src: url(../tipografia/Roboto/Roboto-Bold.ttf);
+}
+
+/*Container em que ficará o título da página*/
+
+.container-1{
+    width: 620px;
+    margin: 5px auto;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 10px;
+    padding-top: 30px;
+}
+
+/*Estilização do h2 e do p*/
+
+h2 {
+    padding-left: none;
+    font-family: RobotoB;
+    margin: 0;
+}
+  
+p {
+    font-size: 13px;
+    font-family: RobotoL;
+    padding: none;
+    margin-top: 10px;
+}
+
+/*Container em que o conteúdo ficará localizado*/
+
+.container-2{
+    border: 1px solid #4169E1;
+    padding: 8px;
+    width: 620px;
+    height: 200px;
+    margin: 5px auto;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.container-3 {
+    border: 1px solid #4169E1;
+    padding: 8px;
+    width: 620px;
+    height: 150px;
+    margin: 5px auto;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 10px;
+}

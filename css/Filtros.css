@@ -1,0 +1,125 @@
+/*Referente a página de Alteração_Senha-1.html*/
+
+/*Importação de Fontes*/
+
+@font-face {
+    font-family: RobotoL;
+    src: url(../tipografia/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: RobotoB;
+    src: url(../tipografia/Roboto/Roboto-Bold.ttf);
+}
+
+/*Container em que ficará o título da página*/
+
+.container-1{
+    border: none;
+    padding: none;
+    width: 750px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/*Linhas entre o título da página*/
+
+hr {
+    border: 1px solid #1547E0;
+}
+
+/*Título*/
+
+.h2 {
+    padding-left: none;
+    font-family: RobotoB;
+}
+
+.container-1 h2 {
+    margin: 0;
+}
+
+/*Container em que os filtros ficarão localizados*/
+
+.container-2 {
+    border: 1px solid #4169E1;
+    padding: 40px;
+    width: 750px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Div dos Filtros*/
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Personalização dos Filtros*/
+
+label {
+    color: #001E79;
+    margin-bottom: 5px;
+}
+
+select.custom-select {
+    width: 200px;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #001E79;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-group label {
+    padding-left: 3px;
+    font-family: RobotoB;
+    font-size: 13px;
+}
+
+/*Container das localizações dos Botões*/
+
+.container-3{
+    border: none;
+    padding: none;
+    width: 750px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/*Container do botão enviar*/
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    align-items: center;
+}
+
+/*Personalização do botão de enviar*/
+
+button.custom-button {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: #001E79;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+  
+.custom-button img{
+    padding-left: 10px;
+}

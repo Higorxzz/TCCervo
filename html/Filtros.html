@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Filtros.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/Rodape.css">
+    <link rel="shortcut icon" href="../favicon/logo_tccervo_favicon.png" type="image/x-icon">
+    <title>TCCervo</title>
+</head>
+<body>
+  <!--Menu-->
+  <header>
+    <!--Logo-->
+    <div class="logo">
+      <img src="../img/logo_tccervo.png" alt="TCCervo">
+      <h1>TCCervo</h1>
+    </div>
+    <!--Barra de Pesquisa-->
+    <div class="search-bar">
+      <div class="search-input">
+        <input type="text" placeholder="Procure por palavras-chave">
+        <button class="search-button"><img src="../img/Vector.png" alt="Buscar" width="20px"></button>
+      </div>
+      <div class="advanced-search">
+        <a href="Filtros.html"><button>Busca avançada</button></a>
+      </div>
+    </div>
+    <!--Menu Dropdown-->
+    <div class="user-profile">
+      <button id="profile-button"><img src="../img/perfil.png" alt="Perfil" width="30px"> <span class="dropdown-arrow"></span></button>
+      <ul class="dropdown-menu" id="profile-dropdown">
+        <li><a href="#" class="text"><img src="../img/bi_people-circle.png" alt="Ícone 1" width="18px">Meu perfil</a></li>
+        <li class="divider"></li>
+        <li><a href="#" class="text"><img src="../img/fa-solid_power-off.png" alt="Ícone 1" width="18px">Sair</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="container-1">
+    <!--Título-->
+    <hr>
+    <h2>Busca avançada</h2>
+    <hr>
+  </div>
+  <div class="container-2">
+    <div class="input-group">
+      <!--Filtro de Curso-->
+      <label for="curso">Curso:</label>
+      <select id="curso" class="custom-select">
+        <option value="">Selecione o curso</option>
+        <option value="">Administração</option>
+        <option value="">Contabilidade</option>
+        <option value="">Desenvolvimento de Sistemas</option>
+        <option value="">Desing Gráfico</option>
+        <option value="">Enfermagem</option>
+        <option value="">Farmácia</option>
+        <option value="">Finanças</option>
+        <option value="">Informática para Internet</option>
+        <option value="">Logística</option>
+        <option value="">Marketing</option>
+        <option value="">Mecânica</option>
+        <option value="">Processos Fotográficos</option>
+        <option value="">Química</option>
+        <option value="">Recursos Humanos</option>
+        <!-- Opções de cursos aqui -->
+      </select>
+    </div>
+    <div class="input-group">
+      <!--Filtro de ODS-->
+      <label for="ods">ODS:</label>
+      <select id="ods" class="custom-select">
+        <option value="">Selecione o ODS</option>
+        <option value="">Erradicação da Pobreza</option>
+        <option value="">Fome Zero</option>
+        <option value="">Saúde e Bem Estar</option>
+        <option value="">Educação e Qualidade</option>
+        <option value="">Igualdade de Gênero</option>
+        <option value="">Água Potável e Saneamento</option>
+        <option value="">Energia Limpa e Acessível</option>
+        <option value="">Trabalho Decente e Crescimento Econômico</option>
+        <option value="">Industria, Inovação e Infraestrutura</option>
+        <option value="">Redução das Desigualdades</option>
+        <option value="">Cidades e Comunidades Sustentáveis</option>
+        <option value="">Consumo e Produção Responsáveis</option>
+        <option value="">Ação Contra a Mudança Global do Clima</option>
+        <option value="">Vida e Água</option>
+        <option value="">Vida Terrestre</option>
+        <option value="">Paz, Justiça e Instituições Eficazes</option>
+        <option value="">Parceirias e Meios de Implementação</option>
+        <!-- Opções de ODS aqui -->
+      </select>
+    </div>    
+    <div class="input-group">
+      <!--filtro de Ano-->
+      <label for="ano">Ano:</label>
+      <select id="ano" class="custom-select">
+        <option value="">Selecione o ano</option>
+        <option value="">2022</option>
+        <option value="">2021</option>
+        <option value="">2020</option>
+        <option value="">2019</option>
+        <option value="">2018</option>
+        <option value="">2017</option>
+        <option value="">2016</option>
+        <option value="">2015</option>
+        <option value="">2014</option>
+        <option value="">2013</option>
+        <option value="">2012</option>
+        <option value="">2011</option>
+        <option value="">2010</option>
+        <!-- Opções de anos aqui -->
+      </select>
+    </div>
+  </div>
+  <div class="container-3">
+    <div class="button-container">
+      <!--Botão para Limpar os Filtros Colocados-->
+      <button class="custom-button">Limpar Filtros<img src="../img/lixeira.png" alt="lixeira" width="17x"></button>
+      <!--Filtro para Buscar Conforme as Exigências dos Filtros-->
+      <button class="custom-button">Buscar<img src="../img/lupa.png" alt="lupa" width="16px"></button>
+    </div>
+  </div>
+  <!--Rodape-->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="../img/logo_tccervo.png" alt="Ícone Logo" class="logo">
+        <h1>TCCervo</h1>
+        <img src="../img/Group 4.png" alt="Ícone E-mail" class="email">
+      </div>
+      <div class="footer-links">
+        <p><a href="#">Ajuda </a><span class="divisora"></span><a href="Fale_Conosco.html"> Fale Conosco </a><span class="divisora"></span><a href="Termos_Uso.html"> Termos de Uso</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/function.js"></script>
+</body>
+</html>

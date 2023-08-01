@@ -1,0 +1,166 @@
+@font-face {
+    font-family: RobotoL;
+    src: url(../tipografia/Roboto/Roboto-Light.ttf);
+}
+  
+@font-face {
+    font-family: RobotoB;
+    src: url(../tipografia/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: RobotoR;
+    src: url(../tipografia/Roboto/Roboto-Regular.ttf);
+}
+
+/*Container da página*/
+
+.container{
+    border: none;
+    padding: 40px;
+    width: 80%;
+    margin: 40px auto;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+}
+
+.sub-container1{
+    width: 15%;
+    height: 100%;
+    border: 1px black solid;
+    display: block;
+    justify-content: center;
+    padding: 0;
+}
+
+.sub-container2{
+    width: 85%;
+    height: 590px;
+    display: block;
+    padding: 0;
+}
+
+.sub-container1 h2{
+    font-family: RobotoR;
+    color: white;
+    font-size: 18px;
+    padding: 2px;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.titulo-filtro {
+    background-color: #001E79;
+    margin: none;
+    padding: 0;
+    height: 24px;
+    border: 1px black solid;
+    border-top: none;
+}
+
+.checks {
+    display: block;
+    padding: 5px;
+}
+
+.result{
+    border: none;
+    padding: none;
+    width: 750px;
+    margin: 40px auto;
+    box-sizing: border-box;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 0;
+}
+
+.titulo_result {
+    width: 108%;
+    border-bottom: #001E79 1px solid;
+    border-top: #001E79 1px solid;
+    height: 30px;
+    padding-right: 1px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    font-family: RobotoB;
+    color: black;
+    justify-content: center;
+}
+
+.sub-container1 .titulo_result {
+    margin: 0;
+    padding: none;
+}
+
+.titulo_result h2{
+    margin: 0;
+    padding: 5px;
+    padding-left: 20px;
+    font-family: RobotoR;
+    font-size: 18px;
+}
+
+.button-details {
+    justify-content: center;
+    padding-left: 39px;
+}
+
+button.custom-button {
+    border: none;
+    border-radius: 4px;
+    background-color: #001E79;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 1px;
+    height: 30px;
+    width: 130px;
+    font-family: RobotoL;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+.custom-button {
+    align-items: center;
+    justify-content: center;
+}
+
+.resultados {
+    display: flex;
+    width: 100%;
+}
+
+.borda {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 230px;
+    height: 330px;
+    margin: 30px;
+    border: 1px solid black;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.capa-tcc {
+    border: 1px solid black;
+    padding: 20px;
+    width: 80px;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 30px auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: RobotoR;
+}

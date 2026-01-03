@@ -1,0 +1,260 @@
+#imagem-preview {
+    width: 150px; /* Largura desejada */
+    height: 180px; /* Altura desejada */
+    object-fit: cover; /* Evita distorções e mantém a proporção */
+}
+main {
+    flex-grow: 1; 
+    position: relative;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 50px;
+    width: 75%;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    height: fit-content;
+}
+.row {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+.pdf {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border: 1px solid #b5b5b5;
+    border-radius: 6px;
+    padding: 5px 8px;
+    width: fit-content;
+    text-decoration: none;
+    color: #000 !important;
+}
+.pdf:hover {
+    text-decoration: none !important;
+    scale: 1.05;
+}
+.odst {
+    margin-bottom: 10px;
+}
+.odst img {
+    width: 24px !important;
+    height: 24px !important; 
+    margin-right: 0 !important;
+}
+.odst a {
+    color: #000 !important;
+    font-size: 1.1em;
+}
+.pdf img {
+    height: 40px !important;
+    width: 40px !important;
+}
+.autores a, .part a {
+    text-decoration: none;
+    color: #4D3F8F;
+    font-weight: bold;
+}
+
+.autores a:hover, .part a:hover {
+    text-decoration: underline;
+}
+
+.topr {
+    align-self: center;
+}
+
+.button a {
+    display: block;
+    text-align: center;
+    font-size: 1.05em;
+    background-color: #4D3F8F;
+    width: 150px;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button a:hover {
+    background-color: #fff;
+    border: 1px solid #4D3F8F;
+    color: #4D3F8F;
+    transition: 0.2s;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.partbox{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.part img {
+    width: 100px; /* Largura desejada */
+    height: 100px; /* Altura desejada */
+    display: inline-flex;
+    margin-right: 10px;
+}
+
+
+.botr {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#descricaoContainer {
+    max-height: 200px;
+    word-wrap: break-word;
+    max-width: 100%;
+    overflow-y: hidden;
+    text-align: justify;
+    font-size: 0.95em;
+    transition: max-height 0.5s ease-in-out; /* Adiciona uma transição suave */
+}
+
+#descricaoContainer.expandido {
+    max-height: none; /* Se expandido, use a altura automática */
+}
+
+#lerMaisLink {
+    display: block;
+    text-align: left;
+    cursor: pointer;
+    color: #4D3F8F;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#lerMaisLink:hover {
+    color: #78A1D1; /* Cor alterada no hover */
+}
+
+.odspart {
+    width: 35%;
+}
+
+.imgods {
+    display: flex;
+    flex-wrap: wrap;
+}
+.partbox .resumo {
+    max-height: 230px;
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical */
+    margin-bottom: 15px;
+}
+.resumo {
+    text-align: justify;
+}
+.resumo p {
+    width: 95%;
+}
+.partbox .resumo::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+  }
+  
+  .partbox .resumo::-webkit-scrollbar-track {
+    background: #d2cbf5; 
+  }
+  
+  .partbox .resumo::-webkit-scrollbar-thumb {
+    background: #7d6dc2; /* Cor da alça da barra de rolagem */
+    border-radius: 6px; /* Borda arredondada da alça da barra de rolagem */
+  }
+  
+  .partbox .resumo::-webkit-scrollbar-thumb:hover {
+    background: #4D3F8F; /* Cor da alça da barra de rolagem quando o mouse está sobre ela */
+  }
+  
+@media screen and (max-width: 1400px){
+    main {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .topr {
+        flex-wrap: wrap;
+    }
+
+    .topr  .fotocapa, .topr .detalhes-tcc, .topr .autores {
+        width: 33%;
+    }
+
+    .botr {
+        flex-direction: column;
+    }
+
+    .botr .partbox{
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+    }
+    .partbox .part {
+        width: 30%;
+        justify-content: left;
+        align-items: baseline;
+    }
+    .partbox .resumo{
+        width: 65%;
+    }
+    .odspart {
+        margin-top: 15px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1060px){
+    .botr .partbox {
+        flex-direction: column;
+        width: 100%;
+    }
+    .partbox .part{
+        width: 100%;
+        margin-top: 15px;
+    }
+    .topr{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 860px){
+    .topr {
+        flex-direction: column;
+        align-items: center;
+    }
+    .topr  .fotocapa, .topr .detalhes-tcc, .topr .autores {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       align-items: center;
+       margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    main {
+        padding: 20px;
+    }
+    .odspart {
+        width: 100%;
+        align-items: center;
+    }
+}
